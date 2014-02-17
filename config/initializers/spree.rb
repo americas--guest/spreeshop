@@ -6,9 +6,20 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
+	config.use_s3 = true
+  config.s3_bucket = 'getchonkey'
+  config.s3_access_key = "AKIAJUDZ3HDM3HNFZVNQ"
+  config.s3_secret = "OiIWlrJRQNfnHcghxui+rsauRCZjfCYL9x1vMHeX"
+  config.s3_host_alias = "s3-us-west-2.amazonaws.com"
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
+
+
+end
+
+  Paperclip.interpolates(:s3_eu_url) do |attachment, style|
+"#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/},"")}"
 end
 
 Spree.user_class = "Spree::User"

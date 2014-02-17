@@ -5,7 +5,7 @@ gem 'rails', '4.0.1'
 gem 'devise'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -51,4 +51,5 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 
 gem 'spree_simple_sales', :path => 'spree_simple_sales'
 gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-1-stable'
-gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => '2-1-stable'  
+gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => '2-1-stable' 
+gem 'rails_12factor', group: :production 
