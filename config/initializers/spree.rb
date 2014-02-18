@@ -8,7 +8,7 @@
 Spree.config do |config|
 	config.use_s3 = true
   config.s3_bucket = '19thHole'
-  config.s3_access_key = "AKIAJUDZ3HDM3HNFZVNQ"
+  config.s3_access_key = "AKIAJJ3RIUJWDFREKV3Q"
   config.s3_secret = "UOzUt9yGA8Wdzj1qosQMZJTc89FSXrRO4rjix0IR"
  
   # Example:
