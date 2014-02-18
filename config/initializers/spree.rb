@@ -7,10 +7,10 @@
 # config.setting_name = 'new value'
 Spree.config do |config|
 	config.use_s3 = true
-  config.s3_bucket = 'getchonkey'
+  config.s3_bucket = '19thHole'
   config.s3_access_key = "AKIAJUDZ3HDM3HNFZVNQ"
   config.s3_secret = "UOzUt9yGA8Wdzj1qosQMZJTc89FSXrRO4rjix0IR"
-  config.s3_host_alias = "s3-us-west-2.amazonaws.com"
+ 
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
