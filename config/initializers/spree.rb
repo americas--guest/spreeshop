@@ -8,8 +8,8 @@
 Spree.config do |config|
 	config.use_s3 = true
   config.s3_bucket = '19thHole'
-  config.s3_access_key = "<AKIAJUDZ3HDM3HNFZVNQ>"
-  config.s3_secret = "<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>"
+  #config.s3_access_key = "AKIAIAOUVZCCUC6JAJPA"
+  #config.s3_secret = "h9IfuQSUHROhzdBzGt9DNtxjGChS7Osflt9T2wap"
  
   # Example:
   # Uncomment to override the default site name.
