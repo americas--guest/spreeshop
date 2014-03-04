@@ -23,6 +23,7 @@
     &:hover {
       background:rgba(9, 22, 33, 0.4);
     }
+   
   }
   .navbar {
     border: 0;
@@ -44,6 +45,11 @@ body {
     color: #b0c4de;
     font-family: Monotype corsiva;
   }
+
+   a {
+      color: #FF0000 ;
+      font-family: papyrus
+    }
 }
 
 #spree-footer {
