@@ -6,7 +6,7 @@
 
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
-  background: asset-url('swinging2.jpeg');
+  background: #F8F8FF;
   background-size: 600px 450px;
   margin-bottom: $line-height-computed;
   #header 
@@ -42,12 +42,12 @@ body {
   }
 
   h2 {
-    color: #b0c4de;
+    color: #000000;
     font-family: Monotype corsiva;
   }
 
    a {
-      color: #FF0000 ;
+      color: #000000 ;
       font-family: papyrus
     }
 }
