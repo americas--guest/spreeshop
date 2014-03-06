@@ -55,6 +55,12 @@ body {
 -moz-filter: grayscale(100%);
 filter: grayscale(100%);
 }
+img.sepia{ -webkit-filter: sepia(1);
+-webkit-filter: sepia(100%); -moz-filter: sepia(100%);
+-ms-filter: sepia(100%); -o-filter: sepia(100%);
+filter: url(sepia.svg#old-timey); filter: sepia(100%);
+}
+
 }
 
 #spree-footer {
