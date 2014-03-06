@@ -50,6 +50,11 @@ body {
       color: #000000 ;
       font-family: papyrus
     }
+
+    img.desaturate { -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
+}
 }
 
 #spree-footer {
