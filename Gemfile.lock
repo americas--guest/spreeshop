@@ -164,6 +164,7 @@ GEM
       i18n (~> 0.6.0)
     multi_json (1.8.4)
     multi_xml (0.5.5)
+    newrelic_rpm (3.7.3.204)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     nori (1.1.5)
@@ -322,6 +323,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 1.2)
   jquery-rails
+  newrelic_rpm
   paperclip
   pg
   rails (= 4.0.1)
