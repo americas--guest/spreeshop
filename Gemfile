@@ -7,6 +7,7 @@ gem 'paperclip'
 gem 'aws-sdk'
 gem 'newrelic_rpm'
 
+
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 
