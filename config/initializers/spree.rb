@@ -14,8 +14,6 @@ Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
- config.override_actionmailer_config = false
-  config.mails_from = "sul@19thHoleSwag.com"
 
 end
 

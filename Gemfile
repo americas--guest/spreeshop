@@ -6,7 +6,6 @@ gem 'devise'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'newrelic_rpm'
-gem 'mandrill-api'
 
 # Use sqlite3 as the database for Active Record
 gem 'pg'
