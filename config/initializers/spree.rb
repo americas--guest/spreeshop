@@ -14,6 +14,8 @@ Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
+   config.enable_mail_delivery = true
+  config.mail_bcc = "sul@19thHoleSwag.com"
 
 
 end
