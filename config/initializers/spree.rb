@@ -16,13 +16,10 @@ Spree.config do |config|
   # config.site_name = "Spree Demo Site"
   config.override_actionmailer_config = true
   config.mails_from = "no-reply@yourdomain.com"
-end
+
 config.enable_mail_delivery = true
   config.mail_bcc = "sul@19thholeswag.com"
 
-  if Rails.env.staging?
-    config.intercept_email = "anisul.huq90@gmail.com"
-  end
 
 
 end
