@@ -15,6 +15,7 @@ Spree.config do |config|
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
 
+
 end
 
   Paperclip.interpolates(:s3_eu_url) do |attachment, style|
