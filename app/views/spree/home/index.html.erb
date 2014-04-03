@@ -1,4 +1,8 @@
-
+<% content_for :sidebar do %>
+  <div data-hook="homepage_sidebar_navigation">
+    <%= render :partial => 'spree/shared/taxonomies' %>
+  </div>
+<% end %>
 
 
 <!--  Carousel - consult the Twitter Bootstrap docs at 
@@ -77,20 +81,3 @@
       });
    });
 </script>
-
-<aside id="horizontal" class="columns four" data-hook>
-
-  <img src="../assets/oakleys3.jpeg" class="img-responsive" alt="Responsive image" style="padding:1px;border:thick solid white;">
-  </aside>
-
-  <aside id="horizontal" class="columns four" data-hook>
-  <img src="../assets/rock3.jpeg" class="img-responsive" alt="Responsive image" style="padding:1px;border:thick solid white;">
-  </aside>
-
-  <aside id="horizontal" class="columns four" data-hook>
-  <img src="../assets/shoes3.jpeg" class="img-responsive" alt="Responsive image" style="padding:1px;border:thick solid white;">
-</aside>
-<aside id="horizontal" class="columns four" data-hook>
-
-  <img src="../assets/laser4.jpeg" class="img-responsive" alt="Responsive image" style="padding:1px;border:thick solid white;">
-  </aside>
