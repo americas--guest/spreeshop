@@ -1,1 +1,2 @@
-Spree::Image.find_in_batches { |batch| batch.map { |img| img.attachment.reprocess! } }
+https://github.com/mcollina/heroku-buildpack-imagemagick
+https://github.com/heroku/heroku-buildpack-ruby
