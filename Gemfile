@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
+gem 'rails', '~> 4.0.6'
 gem 'devise'
 gem 'paperclip'
 gem 'aws-sdk'
-gem 'newrelic_rpm'
+gem 'spree_chimpy', github: 'DynamoMTL/spree_chimpy', branch: 'master'
 
 
 # Use sqlite3 as the database for Active Record
@@ -48,12 +48,11 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'spree', :github => 'spree/spree', :branch => '2-2-stable'
+gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
+gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
 
-gem 'spree', '2.1.3'
-gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-1-stable'
-gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-1-stable'
 
-gem 'spree_simple_sales', :path => 'spree_simple_sales'
-gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-1-stable'
-gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => '2-1-stable' 
+gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-2-stable'
+gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => '2-2-stable' 
 gem 'rails_12factor', group: :production 

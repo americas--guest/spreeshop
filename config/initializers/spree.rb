@@ -6,8 +6,8 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
-	config.use_s3 = true
-  config.s3_bucket = '19thHole'
+	#config.use_s3 = true
+  #config.s3_bucket = '19thHole'
   #config.s3_access_key = "AKIAIAOUVZCCUC6JAJPA"
   #config.s3_secret = "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"
  
@@ -24,8 +24,8 @@ config.enable_mail_delivery = true
 
 end
 
-  Paperclip.interpolates(:s3_eu_url) do |attachment, style|
-"#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/},"")}"
-end
+  #Paperclip.interpolates(:s3_eu_url) do |attachment, style|
+#{}"#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/},"")}"
+#end
 
 Spree.user_class = "Spree::User"
