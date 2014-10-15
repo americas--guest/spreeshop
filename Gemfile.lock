@@ -10,15 +10,6 @@ GIT
       spree_frontend (~> 2.2.0)
 
 GIT
-  remote: git://github.com/DynamoMTL/spree_chimpy.git
-  revision: eeb07430e6cd27127a59897a900f0ecf8ba3df1b
-  branch: master
-  specs:
-    spree_chimpy (2.0.0.alpha)
-      mailchimp (>= 0.0.9)
-      spree_core (~> 2.1)
-
-GIT
   remote: git://github.com/spree/spree.git
   revision: 18f17153956d493106332db6897dffd1606962d8
   branch: 2-2-stable
@@ -212,8 +203,6 @@ GEM
       activesupport (>= 3.0.0)
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
-    mailchimp (0.0.9)
-      httparty
     mime-types (2.4.1)
     mini_portile (0.6.0)
     minitest (4.7.5)
@@ -328,7 +317,6 @@ DEPENDENCIES
   spree!
   spree_auth_devise!
   spree_bootstrap_frontend!
-  spree_chimpy!
   spree_gateway!
   spree_static_content!
   turbolinks

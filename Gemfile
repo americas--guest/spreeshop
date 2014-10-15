@@ -5,7 +5,6 @@ gem 'rails', '~> 4.0.6'
 gem 'devise'
 gem 'paperclip'
 gem 'aws-sdk'
-gem 'spree_chimpy', github: 'DynamoMTL/spree_chimpy', branch: 'master'
 
 
 # Use sqlite3 as the database for Active Record
