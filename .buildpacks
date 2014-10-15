@@ -1,0 +1,1 @@
+Spree::Image.find_in_batches { |batch| batch.map { |img| img.attachment.reprocess! } }
