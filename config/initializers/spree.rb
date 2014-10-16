@@ -10,6 +10,34 @@ Spree.config do |config|
   #config.s3_bucket = '19thHole'
   #config.s3_access_key = "AKIAIAOUVZCCUC6JAJPA"
   #config.s3_secret = "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"
+
+  attachment_config = {
+      s3_credentials: {
+          access_key_id: ENV['AKIAIAOUVZCCUC6JAJPA'],
+          secret_access_key: ENV['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'],
+          bucket: ENV['19thHole'],
+      },
+
+      storage:        :s3,
+      s3_headers:     { "Cache-Control" => "max-age=31557600" },
+      s3_protocol:    "https",
+      bucket:         ENV['S3_BUCKET_NAME'],
+
+      styles: {
+          mini:     "48x48>",
+          small:    "100x100>",
+          product:  "240x240>",
+          large:    "600x600>"
+      },
+
+      path:          ":rails_root/public/spree/products/:id/:style/:basename.:extension",
+      default_url:   "/spree/products/:id/:style/:basename.:extension",
+      default_style: "product",
+  }
+
+  attachment_config.each do |key, value|
+    Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
+  end
  
   # Example:
   # Uncomment to override the default site name.
