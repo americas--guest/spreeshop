@@ -22,6 +22,15 @@ module Spree2
       end
     end
 
+        config.paperclip_defaults = {
+      :storage => :s3,
+      :s3_credentials => {
+        :bucket => '19thHole',
+        :access_key_id => 'AKIAIAOUVZCCUC6JAJPA',
+        :secret_access_key => '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'
+      }
+    }
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
