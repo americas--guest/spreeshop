@@ -15,11 +15,11 @@ Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
-  config.override_actionmailer_config = true
-  config.mails_from = "no-reply@yourdomain.com"
+  #config.override_actionmailer_config = true
+  #config.mails_from = "no-reply@yourdomain.com"
 
-config.enable_mail_delivery = true
-  config.mail_bcc = "sul@19thholeswag.com"
+#config.enable_mail_delivery = true
+  #config.mail_bcc = "sul@19thholeswag.com"
 
   Paperclip::Attachment.default_options[:s3_protocol] = "https"
 Spree::Image.attachment_definitions[:attachment][:styles] = ActiveSupport::JSON.decode('{"mini":"48x48\u003E","small":"175x175\u003E","product":"240x240\u003E","large":"600x600\u003E"}').symbolize_keys!
