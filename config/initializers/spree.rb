@@ -11,6 +11,19 @@ Spree.config do |config|
   #config.s3_access_key = "AKIAIAOUVZCCUC6JAJPA"
   #config.s3_secret = "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"
   #config.attachment_path = '/spree/products/:id/:style/:basename.:extension'
+
+
+ if Rails.env.production?
+    config.enable_mail_delivery   = true
+    config.mail_host              = 'smtp.mandrillapp.com'
+   config.mail_domain            = 'mandrillapp.com'
+    config.mail_port              = 587
+    config.secure_connection_type = 'TLS'
+    config.mail_auth_type         = 'login'
+   config.smtp_username          = ENV['app22333418@heroku.com']
+    config.smtp_password          = ENV['3owtn_ILFJpYZ6T3A-HzFg']
+  end
+
  
   # Example:
   # Uncomment to override the default site name.
