@@ -80,6 +80,13 @@ GIT
       spree_core (~> 2.3.0)
 
 GIT
+  remote: https://github.com/rodolfospalenza/spree_mail_settings.git
+  revision: 257c02d55452f0ec3b1467cd3f160a4772f865b4
+  specs:
+    spree_mail_settings (2.3.1)
+      spree_backend (~> 2.3.1)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 77e167f209d08a7da65b9e98b3cc1df269e0b084
   branch: 2-3-stable
@@ -337,6 +344,7 @@ DEPENDENCIES
   spree_auth_devise!
   spree_bootstrap_frontend!
   spree_gateway!
+  spree_mail_settings!
   spree_reffiliate!
   spree_static_content!
   turbolinks

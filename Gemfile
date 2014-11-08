@@ -51,6 +51,7 @@ gem 'spree', :github => 'spree/spree', :branch => '2-3-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-3-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-3-stable'
 gem 'spree_reffiliate', github: 'kinduff/spree_reffiliate'
+gem 'spree_mail_settings', :git => 'https://github.com/rodolfospalenza/spree_mail_settings.git'
 
 
 
