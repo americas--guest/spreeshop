@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.1.2'
+gem 'rails', '~> 4.1.6'
 gem 'devise'
 #gem 'paperclip'
 gem 'aws-sdk'
@@ -14,10 +14,10 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier'
+gem 'uglifier',  '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails'
+gem 'coffee-rails', '~> 4.1.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -47,13 +47,12 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem 'spree', :github => 'spree/spree', :branch => '2-3-stable'
+gem 'spree', github: 'spree/spree', branch: '2-3-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-3-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-3-stable'
-gem 'spree_reffiliate', github: 'kinduff/spree_reffiliate'
 gem 'spree_mail_settings', :git => 'https://github.com/rodolfospalenza/spree_mail_settings.git'
-
-
+gem 'spree_one_page_checkout', :git => 'https://github.com/mespina/spree_one_page_checkout.git', :branch => '2-3-stable'
+gem 'spree_one_page_checkout_bootstrap_frontend', :git => 'https://github.com/mespina/spree_one_page_checkout_bootstrap_frontend.git', :branch => '2-3-stable'
 
 
 gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-3-stable'

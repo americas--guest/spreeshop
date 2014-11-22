@@ -33,7 +33,19 @@ $icon-font-path: "../../bootstrap/";
     font-size: 24px;
   }
 }
+body {
+  padding: 50px;
+}
 
+h1 {
+  font-size: 3em;
+  font-family: sans-serif;
+}
+
+.char {
+  position: relative;
+  display: inline-block;
+}
 
 
 body {
