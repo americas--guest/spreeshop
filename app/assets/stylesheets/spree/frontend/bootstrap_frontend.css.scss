@@ -65,7 +65,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
   
  
   h1 {
-    color: #F8F8FF;
+    color: #000000;
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
     font-weight: normal;
   }
@@ -76,8 +76,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
     font-weight: normal;
   }
 
+  h3 {
+    color: #fcf2f2;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight: normal;
+  }
+
+  h4 {
+    color: #080808;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight: normal;
+  }
+
+  td {
+    color: #fcf2f2;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight: normal;
+  }
+
+  h6 {
+    color: #fcf2f2;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight: normal;
+  }
    a {
-      color: #080808 ;
+      color: #FFFFFF;
       font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
     }
      ul {
@@ -124,6 +147,7 @@ filter: url(sepia.svg#old-timey); filter: sepia(100%);
 
 
 }
+
 
 
 
