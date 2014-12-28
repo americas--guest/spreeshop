@@ -6,6 +6,8 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
+  #config.show_zero_stock_products = false # Default is true
+
 	#config.use_s3 = true
   #config.s3_bucket = '19thHole'
   #config.s3_access_key = "AKIAIAOUVZCCUC6JAJPA"

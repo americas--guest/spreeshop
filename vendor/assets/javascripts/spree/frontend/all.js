@@ -8,3 +8,4 @@
 //= require spree/frontend/spree_mail_settings
 //= require spree/frontend/spree_one_page_checkout
 //= require spree/frontend/spree_one_page_checkout_bootstrap_frontend
+//= require frontend/spree_imagezoom
