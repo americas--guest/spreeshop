@@ -47,15 +47,17 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem 'spree', github: 'spree/spree', branch: '2-3-stable'
-gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-3-stable'
-gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-3-stable'
-gem 'spree_mail_settings', :git => 'https://github.com/rodolfospalenza/spree_mail_settings.git'
-gem 'spree_one_page_checkout', :git => 'https://github.com/mespina/spree_one_page_checkout.git', :branch => '2-3-stable'
-gem 'spree_one_page_checkout_bootstrap_frontend', :git => 'https://github.com/mespina/spree_one_page_checkout_bootstrap_frontend.git', :branch => '2-3-stable'
+gem 'spree', github: 'spree/spree', branch: '2-4-stable'
+gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-4-stable'
+gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-4-stable'
+#gem 'spree_mail_settings', :git => 'https://github.com/rodolfospalenza/spree_mail_settings.git'
+#gem 'spree_one_page_checkout', :git => 'https://github.com/mespina/spree_one_page_checkout.git', :branch => '2-3-stable'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: '2-4-stable'
 gem 'spree_imagezoom', :git => 'git://github.com/kunalchaudhari/spree_imagezoom.git'
-gem 'spree_zero_stock_products', :git => 'https://github.com/swrobel/spree_zero_stock_products.git', branch: '2-3-stable'
+gem 'spree_zero_stock_products', :git => 'https://github.com/swrobel/spree_zero_stock_products.git', branch: '2-4-stable'
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '2-4-stable'
+gem 'spree_active_shipping', :git => "git://github.com/spree/spree_active_shipping"
 
-gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-3-stable'
-gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => '2-3-stable' 
+gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-4-stable'
+#gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => '2-4-stable' 
 gem 'rails_12factor', group: :production 
