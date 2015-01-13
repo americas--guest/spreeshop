@@ -56,7 +56,7 @@ gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch
 gem 'spree_imagezoom', :git => 'git://github.com/kunalchaudhari/spree_imagezoom.git'
 gem 'spree_zero_stock_products', :git => 'https://github.com/swrobel/spree_zero_stock_products.git', branch: '2-4-stable'
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '2-4-stable'
-gem 'spree_active_shipping', :git => "git://github.com/spree/spree_active_shipping"
+#gem 'spree_active_shipping', :git => "git://github.com/spree/spree_active_shipping"
 
 gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-4-stable'
 #gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => '2-4-stable' 
