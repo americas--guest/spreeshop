@@ -52,7 +52,7 @@ gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :bran
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-4-stable'
 #gem 'spree_mail_settings', :git => 'https://github.com/rodolfospalenza/spree_mail_settings.git'
 #gem 'spree_one_page_checkout', :git => 'https://github.com/mespina/spree_one_page_checkout.git', :branch => '2-3-stable'
-gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: '2-4-stable'
+#gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: '2-4-stable'
 gem 'spree_imagezoom', :git => 'git://github.com/kunalchaudhari/spree_imagezoom.git'
 gem 'spree_zero_stock_products', :git => 'https://github.com/swrobel/spree_zero_stock_products.git', branch: '2-4-stable'
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '2-4-stable'
