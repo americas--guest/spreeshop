@@ -23,7 +23,9 @@
         <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
       </div>
       <%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %>
+      <span class="pricing" itemprop="price"><%= product.price %></span>
       <span class="price selling" itemprop="price"><%= display_price(product) %></span>
+    </li>
     </li>
   <% end %>
   <% reset_cycle("classes") %>
