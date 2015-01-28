@@ -233,6 +233,12 @@ filter: url(sepia.svg#old-timey); filter: sepia(100%);
 
 
 
+ .dropdown-menu li>a{color:#03A9F4; }
+   .dropdown-menu>li{padding:5px; border-bottom:1px black;border-left:1px 
+              solid white;border-right:1px solid white }
+   .dropdown-menu li>a:hover{background:gray; }
+
+
 // -- Spree Layout Custom Rules -------------------------
 
 //TODO, bug #6

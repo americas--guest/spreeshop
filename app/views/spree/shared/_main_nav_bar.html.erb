@@ -4,5 +4,27 @@
 
     <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
 
-  </ul>
+     <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      <li>MEN</li>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="/t/mulco-watches">Mulco Watches</a></li>
+      <li><a href="/t/leisure-society">Leisure Society</a></li>
+    </ul>
+  </div>
+
+   <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      WOMEN
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="/t/anatomie-style">Anatomie Style</a></li>
+      <li><a href="/t/haute-shot">Haute Shot</a></li>
+    </ul>
+  </div>
+</div>
+
 </nav>

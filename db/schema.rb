@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150113050330) do
+ActiveRecord::Schema.define(version: 20150127183959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -243,6 +243,7 @@ ActiveRecord::Schema.define(version: 20150113050330) do
     t.decimal  "promo_total",          precision: 10, scale: 2, default: 0.0
     t.decimal  "included_tax_total",   precision: 10, scale: 2, default: 0.0, null: false
     t.decimal  "pre_tax_amount",       precision: 8,  scale: 2, default: 0.0
+    t.decimal  "tax_total",            precision: 10, scale: 2, default: 0.0
   end
 
   add_index "spree_line_items", ["order_id"], name: "index_spree_line_items_on_order_id", using: :btree
@@ -330,6 +331,7 @@ ActiveRecord::Schema.define(version: 20150113050330) do
     t.datetime "canceled_at"
     t.integer  "canceler_id"
     t.integer  "store_id"
+    t.decimal  "tax_total",                         precision: 10, scale: 2, default: 0.0
   end
 
   add_index "spree_orders", ["approver_id"], name: "index_spree_orders_on_approver_id", using: :btree
@@ -751,6 +753,7 @@ ActiveRecord::Schema.define(version: 20150113050330) do
     t.decimal  "promo_total",          precision: 10, scale: 2, default: 0.0
     t.decimal  "included_tax_total",   precision: 10, scale: 2, default: 0.0, null: false
     t.decimal  "pre_tax_amount",       precision: 8,  scale: 2, default: 0.0
+    t.decimal  "tax_total",            precision: 10, scale: 2, default: 0.0
   end
 
   add_index "spree_shipments", ["address_id"], name: "index_spree_shipments_on_address_id", using: :btree
