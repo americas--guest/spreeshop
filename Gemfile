@@ -60,5 +60,4 @@ gem 'spree_active_shipping', :git => "git://github.com/spree/spree_active_shippi
 
 gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-4-stable'
 #gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => '2-4-stable' 
-gem 'spree_msrp', github: 'moholtzberg/spree_msrp', branch: '2-4-stable'
 gem 'rails_12factor', group: :production 

@@ -6,4 +6,3 @@
 
 //= require_tree .
 
-//= require spree/backend/spree_msrp

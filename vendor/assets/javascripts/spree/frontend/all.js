@@ -7,4 +7,3 @@
 //= require_tree .
 
 //= require frontend/spree_imagezoom
-//= require spree/frontend/spree_msrp
