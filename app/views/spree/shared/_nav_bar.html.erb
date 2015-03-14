@@ -1,7 +1,20 @@
 <nav id="top-nav-bar" class="columns ten">
   <ul id="nav-bar" class="inline" data-hook>
-    <li id="search-bar" data-hook>
-     <a> <%= link_to Spree.t(:create_account), spree.signup_path %> </a>
+          <ul>
+            <% if spree_current_user %>
+  <a href="/account" class="button2">
+    <span>My Account</span>
+  </a>
+  <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
+  <% else %>
+  <a href="/login" class="button2">
+    <span>Login</span>
+  </a>
+  <a href="/signup" class="button2">
+    <span>Create Account</span>
+  </a>
+            <% end %>              
+          </ul>     
      <h5>FREE to sign up. FREE to browse.</h5>
      <li id="link-to-cart" data-hook><%= link_to_cart %></li>
     </li>
