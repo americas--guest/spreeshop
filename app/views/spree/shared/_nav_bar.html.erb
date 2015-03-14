@@ -5,7 +5,9 @@
   <a href="/account" class="button2">
     <span>My Account</span>
   </a>
-  <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
+  <a href="/logout" class="button2">
+    <span>Logout</span>
+  </a>
   <% else %>
   <a href="/login" class="button2">
     <span>Login</span>
