@@ -416,7 +416,19 @@ filter: url(sepia.svg#old-timey); filter: sepia(100%);
 
  .dropdown-menu li>a{color:#03A9F4; }
    .dropdown-menu>li{padding:5px; border-bottom:1px black;border-left:1px 
-              solid white;border-right:1px solid white }
+              solid white;border-right:1px solid white;
+    
+    
+    display: inline-block;
+    padding: 8px 30px 8px 30px;
+    
+    color: #3A474D;
+    text-transform: uppercase;
+    
+    font-weight: 175;
+    font-size: 12px;
+    
+    text-shadow: 0px 1px #fff, 0px -1px #262F33;}
    .dropdown-menu li>a:hover{background:gray; }
 
 
