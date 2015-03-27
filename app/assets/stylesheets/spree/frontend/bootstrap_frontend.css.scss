@@ -24,7 +24,9 @@ $icon-font-path: "../../bootstrap/";
   #logo {
     margin-bottom: 10px;
     img {
+      height:auto;
       width: 330px;
+      float: left;
     }
   }
   .nav a {
@@ -355,6 +357,42 @@ filter: url(sepia.svg#old-timey); filter: sepia(100%);
 
 
 
+}
+figure {
+  display: inline-block;
+  position: relative;
+  left: 0;
+
+}
+
+img.small {
+  border-color: gray /* for an acceptable IE result*/;
+  border-width: 15px;
+  -moz-border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
+  border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
+  border-style: clear;
+  margin: auto;
+}
+
+/**********************************************************
+* If a caption is supplied the image needs a little space 
+* at the bottom to include the caption within the frame
+***********************************************************/
+img.hasCaption {
+  padding-bottom: 50px;
+}
+
+figcaption {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 16px;
+  background-color: white;
+  text-align: center;
+  color: blue;
+  font-family: 'Baskerville';
+  font-size: 30px;
+  padding: 10px;
 }
 
 
