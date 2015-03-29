@@ -16,9 +16,9 @@
 <% end %>
 
 <% if products.any? %>
-<ul id="products" class="inline product-listing" data-hook>
+<ul id="products" class="inline product-listing" style="overflow: scroll"data-hook>
   <% products.each do |product| %>
-    <li id="product_<%= product.id %>" class="columns four <%= cycle("alpha", "alpha", "alpha", "alpha", "alpha", :name => "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
+    <li id="product_<%= product.id %>" class="columns four <%= cycle("alpha", "alpha", "alpha", "alpha", "alpha" , :name => "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
       <div class="product-image">
         <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
       </div>
