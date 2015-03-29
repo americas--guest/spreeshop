@@ -4,7 +4,7 @@
 %>
 
 <% content_for :head do %>
-  <% if paginated_products.respond_to?(:num_pages) %>
+  <% if paginated_products.respond_to?("overflow: scroll") %>
     <%= rel_next_prev_link_tags paginated_products %>
   <% end %>
 <% end %>
@@ -16,7 +16,7 @@
 <% end %>
 
 <% if products.any? %>
-<ul id="products" class="inline product-listing" style="overflow: scroll"data-hook>
+<ul id="products" class="inline product-listing" data-hook>
   <% products.each do |product| %>
     <li id="product_<%= product.id %>" class="columns four <%= cycle("alpha", "alpha", "alpha", "alpha", "alpha" , :name => "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
       <div class="product-image">
