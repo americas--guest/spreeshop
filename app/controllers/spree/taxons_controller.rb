@@ -1,6 +1,5 @@
 module Spree
   class TaxonsController < Spree::StoreController
-    before_filter :authenticate_spree_user!
     rescue_from ActiveRecord::RecordNotFound, :with => :render_404
     helper 'spree/products'
 
