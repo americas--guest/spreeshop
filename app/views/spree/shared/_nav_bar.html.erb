@@ -1,79 +1,40 @@
-<nav id="top-nav-bar" class="columns ten">
-  <ul id="nav-bar" class="inline" data-hook>
-          <ul>
-            <% if spree_current_user %>
-  <a href="/account" class="button2">
-    <span>My Account</span>
-  </a>
-  <a href="/logout" class="button2">
-    <span>Logout</span>
-  </a>
-  <% else %>
-  <a href="/login" class="button2">
-    <span>Login</span>
-  </a>
-  <a href="/signup" class="button2">
-    <span>Create Account</span>
-  </a>
-            <% end %>              
-          </ul>     
-     <h5>FREE to sign up. FREE to browse.</h5>
-     <li id="link-to-cart" data-hook><%= link_to_cart %></li>
-    </li>
-    <div id="main">
- <div class="container">
-<div class="row">
-<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-<div id="main">
-<div class="content">
-	<div class="text">
-	<h2> Looking like a pro, doesn't mean you gotta pay full price!</h2>
-</div>
-<div class="counter">
-<h3>Next flash sale begins</h3>
-<div id="countdown">
-  
-</div><!-- /#Countdown Div -->
-</div> <!-- /.Counter Div -->
-</div> <!-- /.Content Div -->
-</div> <!-- /#Main Div -->
-</div> <!-- /.Columns Div -->
-</div> <!-- /.Row Div -->
-</div> <!-- /.Container Div -->
+<nav class="navbar navbar-findcond navbar-fixed-top">
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <figure id="logo" class="columns six" data-hook><%= logo %></figure>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
 
-<script>
-// set the date we're counting down to
-var target_date = new Date('Apr, 20, 2015 23:00:00 EST').getTime(1200);
- 
-// variables for time units
-var days, hours, minutes, seconds;
- 
-// get tag element
-var countdown = document.getElementById('countdown');
- 
-// update the tag with id "countdown" every 1 second
-setInterval(function () {
- 
-    // find the amount of "seconds" between now and target
-    var current_date = new Date().getTime();
-    var seconds_left = (target_date - current_date) / 1000;
- 
-    // do some time calculations
-    days = parseInt(seconds_left / 86400);
-    seconds_left = seconds_left % 86400;
-     
-    hours = parseInt(seconds_left / 3600);
-    seconds_left = seconds_left % 3600;
-     
-    minutes = parseInt(seconds_left / 60);
-    seconds = parseInt(seconds_left % 60);
-     
-    // format countdown string + set tag value
-    countdown.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
-    + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  
- 
-}, 1000);
-</script>
-</div>
-  </ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mens Fashion Sale<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/t/18-greens">18 Greens</a></li>
+      <li><a href="/t/vzip">Von Zipper</a></li>
+      <li><a href="/t/mulco-watches">Mulco Watches</a></li>
+      <li><a href="/t/canoos">Canoos</a></li>
+      <li><a href="/t/mettle-golf">Mettle Gloves</a></li>
+      <li><a href="/t/betenly">Betenly Belts</a></li>
+          </ul>
+        </li>
+        <% if spree_current_user %>
+        <li class="active"><a href="/account">My Account <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="/logout">Logout <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="/cart">Cart <span class="sr-only">(current)</span></a></li>
+            <% else %>
+            <li class="active"><a href="/login">Login <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="/signup">Create Account <span class="sr-only">(current)</span></a></li>
+
+ <% end %>   
+   
+      </ul>
+      
+    </div>
+  </div>
 </nav>
