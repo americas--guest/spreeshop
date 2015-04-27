@@ -24,7 +24,7 @@
       </div>
       <%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %>
 <span class="price selling" itemprop="price"> Swag: <%= display_price(product) %></span>
-<s>MSRP:   <span class="pricing" itemprop="price">$<%= product.price %></span></s>
+<s>MSRP:   <span class="pricing" itemprop="price">$<%= product.price %>0</span></s>
     </li>
     </li>
   <% end %>

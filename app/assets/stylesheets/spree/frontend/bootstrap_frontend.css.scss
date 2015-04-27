@@ -18,12 +18,25 @@ $icon-font-path: "../../bootstrap/";
    
 
 body {
-  padding-top: 150px;
+  padding-top: 175px;
 }
 
 h1 {
   font-size: 3em;
   font-family: sans-serif;
+}
+h4 {
+  font-family:sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h3 {
+  font-family: Minion Pro;
+  text-transform: uppercase;
+}
+p {
+  font-family: Minion Pro;
+  font-weight: light;
 }
 
 .char {
@@ -380,7 +393,8 @@ div.product-chooser{
       top: 0;
       visibility:hidden;
     }
-img.yellow {
+img:hover.yellow {
+  background-image:url("https://gallery.mailchimp.com/2d721f842e76500384b0e243f/images/b50b7c49-1c8d-4bd9-a6b1-b3329b2e0a4d.png");
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
     -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
@@ -389,7 +403,7 @@ img.yellow {
     margin-bottom:20px;
 }
 
-img.yellow:hover {
+img.yellow {
   filter: none; /* IE6-9 */
   -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
  
