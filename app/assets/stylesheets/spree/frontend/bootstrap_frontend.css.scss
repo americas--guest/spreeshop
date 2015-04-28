@@ -50,12 +50,14 @@ body {
 
 
    a {
+    font-family: sans-serif;
       color: #03A9F4  ;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 2px;
     }
      ul {
+      font-family: sans-serif;
       color: #03A9F4;
       font-weight: bold;
     }
@@ -394,7 +396,7 @@ div.product-chooser{
       visibility:hidden;
     }
 img:hover.yellow {
-  background-image:url("https://gallery.mailchimp.com/2d721f842e76500384b0e243f/images/b50b7c49-1c8d-4bd9-a6b1-b3329b2e0a4d.png");
+   
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
     -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
@@ -403,7 +405,7 @@ img:hover.yellow {
     margin-bottom:20px;
 }
 
-img.yellow {
+img.yellow{
   filter: none; /* IE6-9 */
   -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
  
