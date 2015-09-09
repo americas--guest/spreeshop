@@ -724,7 +724,42 @@ nav.navbar-findcond span.badge.new { background: rgba(255, 0, 0, 0.8); color: #f
        margin-left: -25px;
     }
 }
+  .quarters {
+  display: block;
+  font-size: 0;
+  width: 100%;
+  
+  .quart {
+    color: gray;
+    display: inline-block;
+    font-size: 1rem;
+    overflow: hidden;
+    padding: 1em;
+    vertical-align: top;
+    width: 100%;
+    @media(min-width: 500px) {
+      margin-right: 3.333%;
+      width: 48.3335%;
+      &:nth-child(even) {
+        margin-right: 0; 
+      }
+    }
+    @media(min-width: 800px) {
+      margin-right: 3.333%;
+      width: 22.5%;
+      &:nth-child(even) {
+        margin-right: 3.333%; 
+      }
+      &:nth-child(4) {
+        margin-right: 0; 
+      }
+    }}}
 
+ 
+    
+
+    
+    
 
 div.product-chooser{
     
