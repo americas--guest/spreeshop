@@ -224,7 +224,7 @@ GEM
     ffaker (1.32.1)
     font-awesome-rails (4.4.0.0)
       railties (>= 3.2, < 5.0)
-    friendly_id (5.0.5)
+    friendly_id (5.0.4)
       activerecord (>= 4.0.0)
     highline (1.6.21)
     hike (1.2.3)
