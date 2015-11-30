@@ -1,0 +1,16 @@
+/Users/akm/.rvm/rubies/ruby-2.1.3/bin/ruby -r ./siteconf20151130-16492-1irqk8p.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20151130-16492-1i5vipu
+installing default bcrypt_ext libraries
