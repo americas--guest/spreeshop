@@ -96,14 +96,6 @@ GIT
       spree_core (= 2.4.3.beta)
 
 GIT
-  remote: git://github.com/spree/spree_active_shipping
-  revision: e8bd3aa120ba07ba42cf4b636d93b016d1e8d60d
-  specs:
-    spree_active_shipping (2.2.0)
-      active_shipping (~> 0.12.0)
-      spree_core (~> 2.4.0.beta)
-
-GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: e2ee95e53de65d516c93eeb3246bc11d9f7ce15a
   branch: 2-4-stable
@@ -148,12 +140,6 @@ GEM
       activesupport (= 4.1.9)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-    active_shipping (0.12.5)
-      active_utils (~> 2.2.0)
-      activesupport (>= 2.3.5)
-      builder
-      i18n
-      json (>= 1.5.1)
     active_utils (2.2.3)
       activesupport (>= 2.3.11)
       i18n
@@ -391,15 +377,16 @@ DEPENDENCIES
   aws-sdk
   coffee-rails (~> 4.1.0)
   devise
+  friendly_id (~> 5.0.4)
   jbuilder
   jquery-rails
   pg
   rails (~> 4.1.6)
   rails_12factor
+  rake (~> 10.4.2)
   sass-rails (~> 4.0.3)
   sdoc
   spree!
-  spree_active_shipping!
   spree_auth_devise!
   spree_bootstrap_frontend!
   spree_gateway!
